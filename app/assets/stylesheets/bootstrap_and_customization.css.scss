@@ -1,0 +1,19 @@
+
+$body-bg:   black;
+$navbar-height:   45px;
+$navbar-default-bg: white;
+$navbar-default-brand-color:   black;
+$brand-primary:   #c0392b;
+
+@import 'bootstrap';
+
+.btn-circle {
+width:150px;
+height:150px;
+border-radius:250px;
+border: 6px solid black;
+font-size:30px;
+background: white;
+line-height:128px;
+text-align:center;
+}
