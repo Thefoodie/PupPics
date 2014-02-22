@@ -15,3 +15,7 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+$(function(){
+  $('#carousel-example-generic').carousel();
+});
