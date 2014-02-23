@@ -1,51 +1,48 @@
-<h1><div style="font-size: 50px; color:white">Tri Fit</div></h1>
-<p><div ste="color:white"><strong>Fitness. Simplified.</strong></div></p>
+<div style="position:absolute;" id="carousel-example-generic" class="carousel slide carousel-fade">
 
+    <div class="carousel-inner">
 
-<div class="arrow-up1">
-<div style="position: relative; top: 100px; left: -300px" class="arrow-up3">
-</div>
-</div>
+      <div class="item active">
+        <img src="http://s12.postimg.org/4l7tvhdkd/shutterstock_67788607.jpg" alt="Slide 1" />
+      </div>
 
+      <div class="item">
+        <img src="http://s7.postimg.org/8b4uk96kr/shutterstock_135657995.jpg" alt="Slide 2">
+      </div>
 
-<div style="position: relative; top: 210px; left: 400px; font-size: 40px; color:white"><p>a</p></div>
-<div class ="mission" style="position: relative; top: 220px; left: 350px; font-size:18px; color:white"><p></p></div>
+      <div class="item">
+        <img src="http://s18.postimg.org/67g85uovd/shutterstock_72713440_1.jpg" alt="Slide 3">
+      </div>
+    </div>
+  </div>
 
-<div style="position: relative; top: -315px; left: 445px; font-size: 20px" class="circle1">
-	<p style="color:grey">Diet</p>
-</div>
+<!--<div style="position:relative; top:0px; z-index: 5;">
+  <h1><div style="font-size: 50px; color:white">Tri Fit</div></h1>
+  <p><div ste="color:white"><strong>Fitness. Simplified.</strong></div></p>
+</div> -->
 
-<div class="circle1" style="position: relative; bottom: 150px; left: 167px; font-size: 20px">
-	<p style="color:black">Exercise</p>
-</div>
+<div class="Hello" style="position:absolute; top:400px; z-index: 9;">
+  <div id="container" style=" right: -160px; font-size: 30px">
+    <h1 style="color:black; font-family: 'Nixie One', 'Share Tech', sans-serif; font-size: 45px">Welcome to Tri Fit</h1>
+    <p style="color:black; font-size: 17px; padding-top:15px;"> We are an online service dedicated to offering </br>affordable training and nutrition programs </br> that are personalized to your individual needs.</p>
+    <p style="color:black; font-size: 17px; padding-top:15px"> With a growing team of health experts,</br> we aim to provide reliable and effective</br> fitness consultation, at a fraction of the</br> cost of normal training. </p>
+  </div>
 
-<div class="circle1" style="position: relative; bottom: 260px; right: -727px; font-size: 20px">
-	<p style="color:black">Recovery</p>
-</div>
+  <div id="container1" style="top: -400px; right: -620px; font-size: 30px">
+    <h1 style="color:black; font-family: 'Nixie One', 'Share Tech', sans-serif; font-size: 25px">New to Tri Fit?</h1>
+    <p style="color:black; font-size: 12px; padding-top:10px;"> <i>The journey of a thousand miles begins with a single step </i></p>
+    <p style="color:black; font-size: 12px; top:-5px; position: relative; left: 60px">-Chinese proverb</p>
+    <div style="position: relative; left: 40px;">
+    <p>
+      <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %> 
+    </p>
+  </div>
 
-
-<div id="container" style="position:relative; bottom: 650px; right: -160px; font-size: 30px">
-  <h1 style="color:black; font-family: 'Nixie One', 'Share Tech', sans-serif; font-size: 45px">Welcome to Tri Fit</h1>
-  <p style="color:black; font-size: 17px; padding-top:15px;"> We are an online service dedicated to offering </br>affordable training and nutrition programs </br> that are personalized to your individual needs.</p>
-  <p style="color:black; font-size: 17px; padding-top:15px"> With a growing team of health experts,</br> we aim to provide reliable and effective</br> fitness consultation, at a fraction of the</br> cost of normal training. </p>
-</div>
-
-<div id="container1" style="position:relative; bottom: 1050px; right: -620px; font-size: 30px">
-  <h1 style="color:black; font-family: 'Nixie One', 'Share Tech', sans-serif; font-size: 25px">New to Tri Fit?</h1>
-  <p style="color:black; font-size: 12px; padding-top:10px;"> <i>The journey of a thousand miles begins with a single step </i></p>
-  <p style="color:black; font-size: 12px; top:-5px; position: relative; left: 60px">-Chinese proverb</p>
-  <div>
-  <p style="position: relative; top: 10px; left: 40px;">
-    <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %> 
-  </p>
-</div>
-</div>
-
-<div id="container2" style="position:relative; bottom: 1050px; right: -620px; font-size: 30px">
-  <h1 style="color:black; font-family: 'Nixie One', 'Share Tech', sans-serif; font-size: 20px">Already a member?</h1>
-  <div style="position: relative; top: 15px; left: 45px;">
-  <p>
-    <%= link_to "Log In", new_user_session_path, class: "btn btn-info btn-lg" %>
-  </p>
-</div>
+  <div id="container2" style="top: 32px; right: 23px; font-size: 30px">
+    <h1 style="color:black; font-family: 'Nixie One', 'Share Tech', sans-serif; font-size: 20px">Already a member?</h1>
+    <div style="position: relative; top: 15px; left: 45px;">
+    <p>
+      <%= link_to "Log In", new_user_session_path, class: "btn btn-info btn-lg" %>
+    </p>
+  </div>
 </div>

@@ -34,14 +34,23 @@
 }
 
 .arrow-up3 {
-	width: 0; 
-	height: 0; 
-	border-left: 300px solid transparent;
-	border-right: 300px solid transparent;
+	width: 0;  
+	border-left: 180px solid transparent;
+	border-right: 180px solid transparent;
 	border-bottom: 300px solid white;
-	left: -475px;
-	top: 15px;
+	left: 775px;
+	top: 550px;
 	position: absolute;
+}
+
+.left-bar {
+	width: 0px;
+	border-right: 180px solid white;
+	border-left: 180px solid white;
+	border-top: 500px solid white;
+	border-bottom: 400px solid white;
+	left: -400px;
+	position: relative;
 }
 
 .floatright 
@@ -116,7 +125,7 @@ text-align:center;
 .carousel-inner {
 	width: 1200px;
 	height: 1000px;
-	position: relative;
+	position: absolute;
 }   
 
 .carousel.carousel-fade .item {

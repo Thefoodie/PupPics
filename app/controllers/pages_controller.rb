@@ -1,10 +1,8 @@
 class PagesController < ApplicationController
-  def home
+  def opening
   end
 
-  def about
+  def profile
   end
 
-  def facets
-  end
 end
