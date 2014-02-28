@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140223064803) do
+ActiveRecord::Schema.define(version: 20140227094613) do
+
+  create_table "user_profiles", force: true do |t|
+    t.string   "name"
+    t.string   "gender"
+    t.string   "age"
+    t.string   "weight"
+    t.string   "height"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -30,6 +40,12 @@ ActiveRecord::Schema.define(version: 20140223064803) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "username"
+    t.integer  "age"
+    t.integer  "weight"
+    t.integer  "height"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

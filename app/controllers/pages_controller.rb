@@ -2,7 +2,9 @@ class PagesController < ApplicationController
   def opening
   end
 
-  def profile
+  def user
   end
 
+  def stats
+  end
 end

@@ -1,8 +1,10 @@
 Puppics::Application.routes.draw do
-  devise_for :users
+  
+devise_for :users
   root "pages#opening"
-  get "trash" => "pages#trash"
-  get "profile" => "pages#profile"
+  get "user" => "pages#user"
+  get "stats" => "pages#stats"
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
