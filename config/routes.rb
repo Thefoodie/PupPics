@@ -1,6 +1,6 @@
 Puppics::Application.routes.draw do
   
-root "pages#opening"
+root "pages#openings"
 devise_for :users
   
   get "user" => "pages#user"

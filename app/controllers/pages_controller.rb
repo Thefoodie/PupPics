@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  def opening
+  def openings
   end
 
   def user
