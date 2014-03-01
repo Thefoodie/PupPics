@@ -49,11 +49,16 @@
 	border: 6px solid white;
 	left: 0px;
 	background-color: rgba(200,200,200,0.3);
-	position: relative;
+	position: absolute;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 100px;
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 100px;
+}
+
+.trifit {
+	position: absolute;
+	
 }
 
 .floatright 

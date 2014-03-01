@@ -12,6 +12,7 @@ before_filter :configure_permitted_parameters, if: :devise_controller?
     devise_parameter_sanitizer.for(:sign_up) << :height
     devise_parameter_sanitizer.for(:sign_up) << :goal
     devise_parameter_sanitizer.for(:sign_up) << :username
+    devise_parameter_sanitizer.for(:sign_up) << :gender
   end 
 
   def after_sign_in_path_for(resource)
@@ -19,6 +20,10 @@ before_filter :configure_permitted_parameters, if: :devise_controller?
   end
 
   def after_sign_up_path_for(resource)
-    user-path(resource)
+    user_path(resource)
+  end
+
+  def after_update_path_for (resource)
+    user_path(resource)
   end
 end

@@ -14,9 +14,10 @@
       </div>
 
       <div class="form-group">
-      <%= f.label :last_name %>
-      <%= f.text_field :last_name, class: "form-control" %>
+      <%= f.label :gender %>
+      <%= f.text_field :gender, class: "form-control" %>
       </div>
+
 
       <div class="form-group">
       <%= f.label :age %>
@@ -24,14 +25,19 @@
       </div>
 
       <div class="form-group">
-        <%= f.label :email %>
-        <%= f.email_field :email, class: "form-control", :autofocus => true %>
+      <%= f.label :height %>
+      <%= f.text_field :height, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+      <%= f.label :weight %>
+      <%= f.text_field :weight, class: "form-control" %>
       </div>
 
 
       <div class="form-group">
-        <%= f.label :password %> <i>(leave blank if you don't want to change it)</i>
-        <%= f.password_field :password, class: "form-control", :autocomplete => "off" %>
+        <%= f.label :email %>
+        <%= f.email_field :email, class: "form-control", :autofocus => true %>
       </div>
 
       <div class="form-group">

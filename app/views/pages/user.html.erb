@@ -1,17 +1,24 @@
-<h1 style="position: relative; color:white">Hello, <%= current_user.first_name %>. We at TriFit want to thank you for your interest in our service. You will be notified via email as soon as we have everything up and running!</h1>
+<div class="profile-bar">
+	<p style="position: relative; color:white; font-size:50px;"><%= current_user.first_name %></p>
+<p style="color:white">Age: <%= current_user.age %></p>
+<p style="color:white">Gender: <%= current_user.gender %></p>
+<p style="color:white">Height: <%= current_user.height %> ft.</p>
+<p style="color:white">Weight: <%= current_user.weight %> lbs</p>
 
-<%= link_to "Your Settings", stats_path %>
-
-<div class="arrow-up3">
+<%= link_to "Your Settings", edit_user_registration_path, class:"btn btn-blue, btn-lg" %>
 </div>
 
-<div style="position: relative; top: 250px; left: 463px;"><%= link_to "Diet", "#", class: "btn btn-default btn-circle" %>
-</div>
 
-<div style="position: relative; top: 315px; left: 341px; font-size: 30px"><%= link_to "Exercise", "#", class: "btn btn-default btn-circle" %>
-</div>
+<div class="trifit">
+	<div class="arrow-up3">
+	</div>
 
-<div style="position: relative; top: 178px; left: 585px; font-size: 30px"><%= link_to "Recovery", "#", class: "btn btn-default btn-circle" %>
-</div>
+	<div style="position: relative; top: 250px; left: 463px;"><%= link_to "Diet", "#", class: "btn btn-default btn-circle" %>
+	</div>
 
-<div class="mission" style="relative: absolute; top: 715px; left: 800px; font-size: 40px; color:black"><p> TriFit </p></div>
+	<div style="position: relative; top: 315px; left: 341px; font-size: 30px"><%= link_to "Exercise", "#", class: "btn btn-default btn-circle" %>
+	</div>
+
+	<div style="position: relative; top: 178px; left: 585px; font-size: 30px"><%= link_to "Recovery", "#", class: "btn btn-default btn-circle" %>
+	</div>
+</div>
