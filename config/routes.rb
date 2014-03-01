@@ -1,7 +1,8 @@
 Puppics::Application.routes.draw do
   
+root "pages#opening"
 devise_for :users
-  root "pages#opening"
+  
   get "user" => "pages#user"
   get "stats" => "pages#stats"
   
